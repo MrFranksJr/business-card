@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #23252C;
+    display: flex;
+    justify-content: center;
+}
+
+.profilePic {
+    width: 19.8125rem;
+}
