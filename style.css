@@ -8,6 +8,27 @@ body {
     justify-content: center;
 }
 
-.profilePic {
+.rootbox {
     width: 19.8125rem;
+}
+
+.profilePic {
+    width: 100%;
+}
+
+.bodyblock {
+    padding: 2.19rem;
+}
+
+.buttonblock {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    display: flex;
+    width: 7.1875rem;
+    padding: 0.5625rem 0.8125rem 0.5625rem 0.6875rem;
+    justify-content: center;
+    gap: 0.5rem;
 }

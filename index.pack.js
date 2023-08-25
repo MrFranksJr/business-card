@@ -391,7 +391,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+        value: true
 });
 exports.default = App;
 
@@ -403,14 +403,19 @@ var _profilePic = __webpack_require__(6);
 
 var _profilePic2 = _interopRequireDefault(_profilePic);
 
+var _BodyBlock = __webpack_require__(18);
+
+var _BodyBlock2 = _interopRequireDefault(_BodyBlock);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(_profilePic2.default, null)
-    );
+        return _react2.default.createElement(
+                "div",
+                { className: "rootbox" },
+                _react2.default.createElement(_profilePic2.default, null),
+                _react2.default.createElement(_BodyBlock2.default, null)
+        );
 }
 
 /***/ }),
@@ -30515,6 +30520,83 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 17 */,
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = BodyBlock;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function BodyBlock() {
+    return _react2.default.createElement(
+        "div",
+        { className: "bodyblock" },
+        _react2.default.createElement(
+            "h1",
+            null,
+            "Franky Jr Blondeel"
+        ),
+        _react2.default.createElement(
+            "h2",
+            null,
+            "geek - coder - solution architect"
+        ),
+        _react2.default.createElement(
+            "h4",
+            null,
+            "frankyblondeel.website"
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "buttonblock" },
+            _react2.default.createElement(
+                "button",
+                null,
+                _react2.default.createElement("span", { className: "icon-span" }),
+                "Mail Me"
+            ),
+            _react2.default.createElement(
+                "button",
+                null,
+                _react2.default.createElement("span", { className: "icon-span" }),
+                "Connect"
+            )
+        ),
+        _react2.default.createElement(
+            "h3",
+            null,
+            "About"
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            "I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn."
+        ),
+        _react2.default.createElement(
+            "h3",
+            null,
+            "Interests"
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            "Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic."
+        )
+    );
+}
 
 /***/ })
 /******/ ]);
