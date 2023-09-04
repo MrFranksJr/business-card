@@ -30564,15 +30564,15 @@ function BodyBlock() {
             { className: "buttonblock" },
             _react2.default.createElement(
                 "button",
-                null,
-                _react2.default.createElement("span", { className: "icon-span" }),
-                "Mail Me"
+                { className: "mail-btn" },
+                _react2.default.createElement("i", { "class": "fa-solid fa-envelope" }),
+                " Mail Me"
             ),
             _react2.default.createElement(
                 "button",
-                null,
-                _react2.default.createElement("span", { className: "icon-span" }),
-                "Connect"
+                { className: "connect-btn" },
+                _react2.default.createElement("i", { "class": "fa-brands fa-linkedin" }),
+                " Connect"
             )
         ),
         _react2.default.createElement(
