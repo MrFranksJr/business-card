@@ -5,12 +5,11 @@
     "react-dom": "18"
   },
   "devDependencies": {
-    "babel-core": "^6.0",
-    "babel-loader": "^7.0",
+    "babel-core": "*",
+    "babel-loader": "*",
     "babel-preset-env": "*",
     "babel-preset-react": "*",
-    "file-loader": "^6.2.0",
-    "webpack": "^2.0"
+    "webpack": "*"
   },
   "scripts": {
     "build": "webpack",
