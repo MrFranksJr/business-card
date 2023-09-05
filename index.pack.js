@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -264,9 +264,9 @@ process.umask = function() { return 0; };
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(11);
+  module.exports = __webpack_require__(13);
 } else {
-  module.exports = __webpack_require__(10);
+  module.exports = __webpack_require__(12);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -376,9 +376,9 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(15);
+  module.exports = __webpack_require__(17);
 } else {
-  module.exports = __webpack_require__(14);
+  module.exports = __webpack_require__(16);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -399,13 +399,17 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _profilePic = __webpack_require__(6);
+var _profilePic = __webpack_require__(8);
 
 var _profilePic2 = _interopRequireDefault(_profilePic);
 
-var _BodyBlock = __webpack_require__(18);
+var _BodyBlock = __webpack_require__(6);
 
 var _BodyBlock2 = _interopRequireDefault(_BodyBlock);
+
+var _Footer = __webpack_require__(7);
+
+var _Footer2 = _interopRequireDefault(_Footer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -414,7 +418,8 @@ function App() {
                 "div",
                 { className: "rootbox" },
                 _react2.default.createElement(_profilePic2.default, null),
-                _react2.default.createElement(_BodyBlock2.default, null)
+                _react2.default.createElement(_BodyBlock2.default, null),
+                _react2.default.createElement(_Footer2.default, null)
         );
 }
 
@@ -457,15 +462,126 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(9);
+  module.exports = __webpack_require__(11);
 } else {
-  module.exports = __webpack_require__(8);
+  module.exports = __webpack_require__(10);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = BodyBlock;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _InterestText = __webpack_require__(19);
+
+var _InterestText2 = _interopRequireDefault(_InterestText);
+
+var _AboutText = __webpack_require__(20);
+
+var _AboutText2 = _interopRequireDefault(_AboutText);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function BodyBlock() {
+    return _react2.default.createElement(
+        "div",
+        { className: "bodyblock" },
+        _react2.default.createElement(
+            "h1",
+            null,
+            "Franky Jr Blondeel"
+        ),
+        _react2.default.createElement(
+            "h2",
+            null,
+            "geek - coder - solution architect"
+        ),
+        _react2.default.createElement(
+            "h4",
+            null,
+            "frankyblondeel.website"
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "buttonblock" },
+            _react2.default.createElement(
+                "button",
+                { className: "mail-btn" },
+                _react2.default.createElement("i", { className: "fa-solid fa-envelope" }),
+                " Mail Me"
+            ),
+            _react2.default.createElement(
+                "button",
+                { className: "connect-btn" },
+                _react2.default.createElement("i", { className: "fa-brands fa-linkedin" }),
+                " Connect"
+            )
+        ),
+        _react2.default.createElement(_AboutText2.default, null),
+        _react2.default.createElement(_InterestText2.default, null)
+    );
+}
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+        value: true
+});
+exports.default = Footer;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Footer() {
+        return _react2.default.createElement(
+                "footer",
+                null,
+                _react2.default.createElement(
+                        "button",
+                        { className: "social-btn" },
+                        _react2.default.createElement("img", { className: "social-icon", src: "../assets/images/ghub.svg", alt: "github icon" })
+                ),
+                _react2.default.createElement(
+                        "button",
+                        { className: "social-btn" },
+                        _react2.default.createElement("img", { className: "social-icon", src: "../assets/images/instagram.svg", alt: "github icon" })
+                ),
+                _react2.default.createElement(
+                        "button",
+                        { className: "social-btn" },
+                        _react2.default.createElement("img", { className: "social-icon", src: "../assets/images/twitter.svg", alt: "github icon" })
+                ),
+                _react2.default.createElement(
+                        "button",
+                        { className: "social-btn" },
+                        _react2.default.createElement("img", { className: "social-icon", src: "../assets/images/linkedin.svg", alt: "github icon" })
+                )
+        );
+}
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -483,11 +599,11 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function ProfilePic() {
-    return _react2.default.createElement("img", { className: "profilePic", src: "../assets/images/profile.png", alt: "" });
+    return _react2.default.createElement("img", { className: "profilePic", src: "../assets/images/profile.png", alt: "profile picture of Franky smiling at the camera" });
 }
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -510,7 +626,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -532,7 +648,7 @@ if (process.env.NODE_ENV !== "production") {
 var React = __webpack_require__(1);
 var _assign = __webpack_require__(2);
 var Scheduler = __webpack_require__(3);
-var tracing = __webpack_require__(16);
+var tracing = __webpack_require__(18);
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
@@ -26780,7 +26896,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27084,7 +27200,7 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!rk(c))throw Er
 
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29425,7 +29541,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29455,7 +29571,7 @@ exports.useLayoutEffect=function(a,b){return S().useLayoutEffect(a,b)};exports.u
 
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29810,7 +29926,7 @@ exports.unstable_wrap = unstable_wrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29826,7 +29942,7 @@ var b=0;exports.__interactionsRef=null;exports.__subscriberRef=null;exports.unst
 
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30480,7 +30596,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30507,23 +30623,22 @@ exports.unstable_wrapCallback=function(a){var b=P;return function(){var c=P;P=b;
 
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(13);
+  module.exports = __webpack_require__(15);
 } else {
-  module.exports = __webpack_require__(12);
+  module.exports = __webpack_require__(14);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */,
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30532,7 +30647,7 @@ if (process.env.NODE_ENV === 'production') {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.default = BodyBlock;
+exports.default = InterestText;
 
 var _react = __webpack_require__(1);
 
@@ -30540,51 +30655,10 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function BodyBlock() {
+function InterestText() {
     return _react2.default.createElement(
         "div",
-        { className: "bodyblock" },
-        _react2.default.createElement(
-            "h1",
-            null,
-            "Franky Jr Blondeel"
-        ),
-        _react2.default.createElement(
-            "h2",
-            null,
-            "geek - coder - solution architect"
-        ),
-        _react2.default.createElement(
-            "h4",
-            null,
-            "frankyblondeel.website"
-        ),
-        _react2.default.createElement(
-            "div",
-            { className: "buttonblock" },
-            _react2.default.createElement(
-                "button",
-                { className: "mail-btn" },
-                _react2.default.createElement("i", { "class": "fa-solid fa-envelope" }),
-                " Mail Me"
-            ),
-            _react2.default.createElement(
-                "button",
-                { className: "connect-btn" },
-                _react2.default.createElement("i", { "class": "fa-brands fa-linkedin" }),
-                " Connect"
-            )
-        ),
-        _react2.default.createElement(
-            "h3",
-            null,
-            "About"
-        ),
-        _react2.default.createElement(
-            "p",
-            null,
-            "I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn."
-        ),
+        null,
         _react2.default.createElement(
             "h3",
             null,
@@ -30593,7 +30667,44 @@ function BodyBlock() {
         _react2.default.createElement(
             "p",
             null,
-            "Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic."
+            "Like all people on planet Earth, I like food, so I'm interested in that. Also, I like seeing beautiful things and enrich myself with different cultures, so traveling is up there too.",
+            _react2.default.createElement("br", null),
+            "All jokes aside though, I'm very interested in modern technology and coding. Motorcycle riding is my top-passion that I will never let go off. Electronic music stole my heart."
+        )
+    );
+}
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = AboutText;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function AboutText() {
+    return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+            "h3",
+            null,
+            "About"
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            "I am an aspiring developer with years of experience in the software business as a Solution Architect. I'm looking to switch things around, and focus my time and energy on becoming an expert developer. A clean coder, with a passion for solving complex problems and delivering first-class solutions to my customers."
         )
     );
 }
