@@ -17,17 +17,6 @@ module.exports = {
         "exclude": /node_modules/,
         "test": /\.js$/
       },
-      {
-        test: /\.(jpe?g|gif|png|svg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              limit: 10000
-            }
-          }
-        ]
-      },
     ]
   },
   "entry": {
