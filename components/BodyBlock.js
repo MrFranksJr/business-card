@@ -18,7 +18,7 @@ function ClickButton({ message, children }) {
 export default function BodyBlock() {
     return <div className="bodyblock">
         <h1>Franky Jr Blondeel</h1>
-        <h2>geek - coder - solution architect</h2>
+        <h2>coder - solution architect</h2>
         <h4>frankyblondeel.website</h4>
         <div className="buttonblock">
             <ClickButton message="MailMe">
