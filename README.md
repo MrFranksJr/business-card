@@ -26,3 +26,6 @@ The Frontend Developer Career Path aims to teach you everything you need to beco
 - [Become a Scrimba Pro member](https://scrimba.com/pricing)
 
 Happy Coding!
+
+## About this assignment
+This is my first 'finished' react app. A simple static page in order to get familiar with the different new concepts of React. You van find the result [here](https://frbl-react-bcard.netlify.app/)
